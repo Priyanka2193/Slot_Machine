@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Slot Machine</string>
+    <string name="play">play</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="spin">SPIN</string>
+    <string name="leaderboard">LEADER BOARD</string>
+    <string name="score">Score</string>
+</resources>

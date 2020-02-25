@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1064778771461",
+    "firebase_url": "https://slot-machine-d7045.firebaseio.com",
+    "project_id": "slot-machine-d7045",
+    "storage_bucket": "slot-machine-d7045.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064778771461:android:f2e301660d117094aec06c",
+        "android_client_info": {
+          "package_name": "com.priyanka.slotmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064778771461-p3ko7llpvrj89jp8i1s0n1lhqve811mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0Ob6Wp1AJG9YqLQGDHE7O4pkcxK0FTTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064778771461-p3ko7llpvrj89jp8i1s0n1lhqve811mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
