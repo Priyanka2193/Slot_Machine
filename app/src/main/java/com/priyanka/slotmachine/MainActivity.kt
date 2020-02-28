@@ -3,6 +3,7 @@ package com.priyanka.slotmachine
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +15,8 @@ class MainActivity : AppCompatActivity() {
         play_button.setOnClickListener {
             startActivity(Intent(this, PlayActivity::class.java))
         }
+
+        var db= FirebaseDatabase.getInstance().reference
+        db.setValue("Test")
     }
 }

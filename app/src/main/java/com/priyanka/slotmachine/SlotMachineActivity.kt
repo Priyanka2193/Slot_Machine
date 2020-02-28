@@ -41,6 +41,9 @@ class SlotMachineActivity:AppCompatActivity()
 
         text_view.text=rounds.toString()
 
+
+
+
     }
     private fun getpoints(args: Array<String>) : Int  {
 
