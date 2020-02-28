@@ -25,6 +25,9 @@
         <activity
             android:name=".SlotMachineActivity"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".EndGameActivity"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

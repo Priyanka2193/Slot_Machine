@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, PlayActivity::class.java))
         }
 
-        var db= FirebaseDatabase.getInstance().reference
-        db.setValue("Test")
+
     }
 }

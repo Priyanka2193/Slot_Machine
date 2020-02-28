@@ -8,5 +8,5 @@
     <string name="spin">SPIN</string>
     <string name="leaderboard">LEADER BOARD</string>
     <string name="score">Score</string>
-    <string name="GameOver">Game Over!</string>
+    <string name="GameOver">Game Over! Score:</string>
 </resources>

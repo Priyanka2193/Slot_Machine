@@ -1,5 +1,6 @@
 package com.priyanka.slotmachine
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ class SlotMachineActivity:AppCompatActivity()
 {
     data class slotItem(val drawable: Int,val Name: String )
     var roundnumber: Int =0
+    var pointfromround:Int=0
 
     private val fruits: List<slotItem> = listOf(
     slotItem(R.drawable.lemon,  "lemon"),
@@ -35,25 +37,29 @@ class SlotMachineActivity:AppCompatActivity()
         val thirdItem :slotItem = fruits.random()
 
         val namesarray= arrayOf<String>(firstItem.Name, secondItem.Name, thirdItem.Name)
-       val rounds= getpoints(namesarray)
+        pointfromround += getpoints(namesarray)
 
         cherries_image_view.setImageResource(firstItem.drawable)
         body_image_view.setImageResource(secondItem.drawable)
         footer_image_view.setImageResource(thirdItem.drawable)
 
-        text_view.text=rounds.toString()
+        text_view.text=pointfromround.toString()
         roundnumber++
 
 
         if(roundnumber== 10)
         {
-            startActivity(Intent(this, EndGameActivity::class.java))
+
+            val intent =  Intent(this, EndGameActivity::class.java)
+            intent.putExtra("Game Score", pointfromround)
+            startActivity(intent)
         }
 
 
 
 
     }
+
     private fun getpoints(args: Array<String>) : Int  {
 
         val firstcount=args.filter{item-> item == args[0]}.count()
