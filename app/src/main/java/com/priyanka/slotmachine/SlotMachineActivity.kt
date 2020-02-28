@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_slotmachine.*
 class SlotMachineActivity:AppCompatActivity()
 {
     data class slotItem(val drawable: Int,val Name: String )
+    var roundnumber: Int =0
 
     private val fruits: List<slotItem> = listOf(
     slotItem(R.drawable.lemon,  "lemon"),
@@ -40,6 +41,12 @@ class SlotMachineActivity:AppCompatActivity()
         footer_image_view.setImageResource(thirdItem.drawable)
 
         text_view.text=rounds.toString()
+        roundnumber++
+
+        if(roundnumber== 10)
+        {
+
+        }
 
 
 
