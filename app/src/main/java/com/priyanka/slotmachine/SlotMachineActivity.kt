@@ -1,5 +1,6 @@
 package com.priyanka.slotmachine
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_slotmachine.*
@@ -43,9 +44,10 @@ class SlotMachineActivity:AppCompatActivity()
         text_view.text=rounds.toString()
         roundnumber++
 
+
         if(roundnumber== 10)
         {
-
+            startActivity(Intent(this, EndGameActivity::class.java))
         }
 
 
